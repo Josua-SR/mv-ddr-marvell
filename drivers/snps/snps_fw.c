@@ -451,7 +451,7 @@ static void snps_mail_box_print_stream_msg(int msg_id, int msg_log_index)
 
 	/* 1D and 2D have different mail box dictionary database */
 	mb_stream_database = (snps_get_state() == TRAINING_2D ? two_d_messages : one_d_messages);
-	stream_msg_count = sizeof(mb_stream_database) / sizeof(mb_stream_database[0]);
+	stream_msg_count = sizeof(mb_stream_database) / sizeof(struct mail_box_stream_message);
 
 	/* Most of the dictionary msg_id's are continuous, so first check database if
 	 * msg_id cell holds this msg_id */
