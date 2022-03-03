@@ -100,6 +100,9 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #include "snps_update.h"
 #include "snps_regs.h"
 
+// FIXME: instantiate global gd variable just once, here.
+struct snps_global_data gd;
+
 /* TODO: consider where to relocate the below structs: snps_section_names & snps_sections */
 static struct snps_section_name snps_section_names[] = {
 	{ SECTION_PHY_CONFIG , "PHY Configuration" },
