@@ -319,7 +319,7 @@ static struct mv_ddr_page_element page_tbl[] = {
 	{MV_DDR_PAGE_SIZE_1K, MV_DDR_PAGE_SIZE_2K}, /* 2G */
 	{MV_DDR_PAGE_SIZE_1K, MV_DDR_PAGE_SIZE_2K}, /* 4G */
 	{MV_DDR_PAGE_SIZE_1K, MV_DDR_PAGE_SIZE_2K}, /* 8G */
-	{0, 0}, /* TODO: placeholder for 16-Mbit die capacity */
+	{MV_DDR_PAGE_SIZE_1K, MV_DDR_PAGE_SIZE_2K}, /* 16G */
 	{0, 0}, /* TODO: placeholder for 32-Mbit die capacity */
 	{0, 0}, /* TODO: placeholder for 12-Mbit die capacity */
 	{0, 0}  /* TODO: placeholder for 24-Mbit die capacity */
